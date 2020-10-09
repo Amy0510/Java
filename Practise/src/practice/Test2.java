@@ -1,7 +1,7 @@
 package practice;
-import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
+import java.text.*;
 public class Test2 {
 
 	/*private static int[] nums = {7, 10, 10, 15, 15, 15, 15, 10, 10, 10, 15, 10, 10};
@@ -26,18 +26,26 @@ public class Test2 {
 	*/
 
 
-   public static void main (String[] args)
-   {
-	// test a
-	    ClimbingClub hikerClub = new ClimbingClub();
-	    hikerClub.addClimb("Monadnock", 274);
-	    hikerClub.addClimb("Whiteface", 301);
-	    hikerClub.addClimb("Algonquin", 225);
-	    hikerClub.addClimb("Monadnock", 344);
-	    System.out.print(hikerClub);
-	    hikerClub.distinctPeakNames();
-	    System.out.println("The order printed above should be Monadnock, Whiteface, Algonquin, Monadnock");
-   }
+	 /*public static void moveSmallest(ArrayList<Integer> list)
+	    {
+	        int smallestIndex = list.get(0);
+	        for (int i =1; i< list.size(); i++)
+	        {
+	            if (list.get(i) < smallestIndex)
+	            {
+	                smallestIndex = i;
+	            }
+	        }
+	        list.add(0, list.remove(smallestIndex));
+	    }*/
+	
+	
+
+	    public static void main(String[] args)
+	    {
+	    	Book b = new Dictionary();
+	    	b.getDefinition();
+	    }
 	 
 
 }
