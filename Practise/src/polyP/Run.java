@@ -7,31 +7,29 @@ public class Run {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static void selectionSort(int[] elements)
-	   {
-	      for (int j = 0; j < elements.length - 1; j++)
-	      {
-	         int minIndex = j;
-	         for (int k = j + 1; k < elements.length; k++)
-	         {
-	            if (elements[k] < elements[minIndex])
-	            {
-	               minIndex = k;
-	            }
-	         }
-	         int temp = elements[j];
-	         elements[j] = elements[minIndex];
-	         elements[minIndex] = temp;
-	         System.out.println(Arrays.toString(elements));
-	       }
-	   }
-
+	public static void twoSum(int nums[], int target) {
+		int[] indexes = new int [2];
+		for(int index = 0; index < nums.length; index++) {
+			for(int secondIndex = index+1; secondIndex < nums.length; secondIndex++) {
+				if(nums[index] + nums[secondIndex] == target) {
+					indexes[0] = index;
+					indexes[1] = secondIndex;
+					break;
+				}
+			}
+		}
+		
+		for(int i =0; i<2; i++) {
+			System.out.println(indexes[i]);
+		}
+	}
+	
 	   public static void main(String[] args)
 	   {
+		   
 	      int[] arr1 = {10, 6, 3, 2, 8};
-	      System.out.println(Arrays.toString(arr1));
-	      selectionSort(arr1);
-	      System.out.println(Arrays.toString(arr1));
+	      twoSum(arr1, 16);
+	      
 	   }
 
 }
